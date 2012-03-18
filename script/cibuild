@@ -1,6 +1,6 @@
 #!/bin/bash -e
-source /usr/local/rvm/scripts/rvm
-rvm use 1.9.3-p0@testapp
+source /etc/profile.d/rvm.sh
+rvm use 1.9.3@testapp
 bundle install --path vendor/gems --binstubs
 bundle exec rake db:migrate
 bundle exec rake
